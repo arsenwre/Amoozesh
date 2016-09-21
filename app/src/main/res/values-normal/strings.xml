@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">خوگر</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="problem_from_server">مشکل در ارتباط با سرور. لطفا بعدا تلاش کنید.</string>
+    <string name="download_app">دانلود نسخه جدید</string>
+
+    <!-- slide menu -->
+    <string name="guest_user">کاربر مهمان</string>
+    <string name="login_or_sign_up">ساخت حساب | ورود</string>
+
+    <!-- products -->
+    <string name="products">کالا</string>
+    <string name="khooger_suggest">پیشنهاد خوگر</string>
+    <string name="price_asc">قیمت:صعودی</string>
+    <string name="price_desc">قیمت:نزولی</string>
+    <string name="newest">جدیدترین ها</string>
+    <string name="reset">بازنشانی</string>
+    <string name="back">بازگشت</string>
+    <string name="products_search">جستجوی کالا</string>
+
+    <!-- product detail -->
+    <string name="product_description">توضیحات کالا:</string>
+    <string name="product_specification">خصوصیات:</string>
+    <string name="code">کد کالا</string>
+    <string name="supplier">تامین کننده</string>
+    <string name="weight">وزن</string>
+    <string name="width">عرض</string>
+    <string name="height">ارتفاع</string>
+    <string name="length">طول</string>
+    <string name="material">جنس</string>
+    <string name="warranty_desc">گارانتی</string>
+    <string name="fellow_price">هزینه همکار</string>
+    <string name="discount_percent">تخفیف</string>
+    <string name="after_sell_service">خدمات پس از فروش</string>
+    <string name="assemble_status">وضعیت نصب</string>
+    <string name="assemble_cost">هزینه نصب</string>
+    <string name="assemble_description">توضیحات نصب</string>
+    <string name="additional_details">توضیحات تکمیلی</string>
+    <string name="sort">مرتب سازی</string>
+    <string name="colors">رنگ ها</string>
+    <string name="colors_double_dot">رنگ ها:</string>
+    <string name="delivery_time">زمان تحویل</string>
+    <string name="checkout_this_product_from_khooger">این کالا را در خوگر مشاهده کنید.</string>
+    <string name="category_name">دسته بندی</string>
+    <string name="see_in_site">نمایش در سایت</string>
+    <string name="suplemment_products">کالاهای مرتبط</string>
+
+
+    <!-- projects -->
+    <string name="photo">تصویر</string>
+    <string name="share...">اشتراک گذاری...</string>
+    <string name="checkout_this_project_from_khooger">این تصویر را در خوگر مشاهده کنید. </string>
+    <string name="photos_search">جستجوی تصاویر</string>
+
+    <!-- project detail -->
+    <string name="ideas">مطالب:</string>
+    <string name="comments">نظرات:</string>
+    <string name="properties">خصوصیات:</string>
+    <string name="style">سبک:</string>
+    <string name="project_other_photos">تصاویر دیگر در پروژه</string>
+    <string name="photo_info">اطلاعات تصویر</string>
+
+    <!-- ideas -->
+    <string name="ideass">مطالب</string>
+    <string name="idea">مطلب</string>
+
+    <!-- idea detail -->
+    <string name="checkout_this_idea_from_khooger">این مطلب را در خوگر مشاهده کنید.</string>
+    <string name="send_post_feature_is_enable_in_website">امکان ارسال پست در حال حاضر تنها از طریق سایت امکان پذیر می باشد.</string>
+    <string name="coming_soon_in_next_versions">به‌زودی در نسخه های بعدی فراهم خواهد بود.</string>
+
+    <!-- advice -->
+    <string name="advices">گفتگوها</string>
+
+    <!-- advice detail-->
+    <string name="friends_post">نظرات و سوالات کاربران</string>
+    <string name="checkout_this_advice_from_khooger">این گفتگو را در خوگر مشاهده کنید.</string>
+
+    <!-- professionals -->
+    <string name="professional">طراح</string>
+
+    <!-- professionals detail -->
+    <string name="following">دنبال کننده</string>
+    <string name="followers">دنبال شونده</string>
+    <string name="projects_list">لیست پروژه ها</string>
+    <string name="idea_list">لیست مطالب</string>
+    <string name="speciality_services_double_dot">خدمات تخصصی:</string>
+    <string name="activities_double_dot">زمینه فعالیت:</string>
+    <string name="phone_double_dot">تلفن:</string>
+    <string name="address_double_dot">آدرس:</string>
+    <string name="ceo_double_dot">مدیر عامل:</string>
+    <string name="establishment_place_double_dot">مکان استقرار:</string>
+    <string name="posts">پست ها</string>
+    <string name="change_user_avatar">تغییر تصویر پروفایل</string>
+    <string name="checkout_this_professional_from_khooger">اطلاعات مربوط به این طراح را در خوگر مشاهده کنید.</string>
+
+    <!-- professionals project -->
+    <string name="checkout_this_professional_project_from_khooger">این پروژه را در خوگر مشاهده کنید.</string>
+    <string name="project">پروژه</string>
+
+    <!-- notification -->
+    <string name="notification_title">پیغام از خوگر</string>
+    <string name="notification_text">نسخه جدیدی از خوگر منتشر شده است</string>
+
+    <!-- sliding menu -->
+    <string name="home">خانه</string>
+    <string name="photos">تصاویر</string>
+    <string name="profile">پنل کاربری</string>
+    <string name="professionals">طراحان</string>
+    <string name="advice">گفتگو</string>
+    <string name="exit">خروج</string>
+    <string name="professionals_search">جستجوی طراحان</string>
+    <string name="my_khooger">خوگر من</string>
+    <string name="view_profile">مشاهده پروفایل</string>
+    <string name="feeds">فیدها</string>
+    <string name="activities">فعالیت ها</string>
+    <string name="edit_profile">ویرایش پروفایل</string>
+    <string name="professional_form_request">فعالیت به عنوان طراح</string>
+
+    <!-- main activity -->
+    <string name="more">بیشتر</string>
+    <string name="last_photos">آخرین تصاویر</string>
+    <string name="productes">کالاها</string>
+
+    <!-- search activity -->
+    <string name="more_result">نتایج بیشتر</string>
+    <string name="not_found">موردی یافت نشد</string>
+    <string name="search">جستجو</string>
+
+    <!-- loading activity -->
+    <string name="virtual_business_network">شبکه کسب و کار مجازی</string>
+    <string name="in_decoration_and_architect_area">در حوزه دکوراسیون و معماری</string>
+    <string name="version">نسخه</string>
+    <string name="a_place_to_see">امکانی برای مشاهده و</string>
+    <string name="accessibility_to_products_and_services">دسترسی به کالا و خدمات</string>
+
+    <!-- login or sign up dialog -->
+    <string name="close">بستن</string>
+    <string name="create_account">ساخت حساب</string>
+    <string name="create_user_account">ساخت حساب کاربری</string>
+    <string name="login">ورود</string>
+
+    <!-- CreateAccountActivity -->
+    <string name="create_account_username">نام کاربری:</string>
+    <string name="create_account_username_hint">با حروف انگلیسی و بدون فاصله</string>
+    <string name="create_account_password">رمز عبور:</string>
+    <string name="create_account_password_hint">رمز عبور</string>
+    <string name="create_account_repeat_password">تکرار رمز عبور:</string>
+    <string name="create_account_repeat_password_hint">تکرار رمز عبور</string>
+    <string name="create_account_email">آدرس ایمیل:</string>
+    <string name="create_account_email_hint">آدرس ایمیل</string>
+    <string name="submit">ثبت</string>
+
+
+    <!-- login dialog -->
+    <string name="automatic_login">ورود خودکار</string>
+    <string name="remember_me">مرا به خاطر بسپار</string>
+    <string name="login_username_hint">نام کاربری یا ایمیل</string>
+
+    <!-- EditProfileActivity -->
+    <string name="group_or_company_name_title">نام گروه/ شرکت:</string>
+    <string name="group_or_company_name">نام گروه/ شرکت</string>
+    <string name="professional_information">اطلاعات تخصصی</string>
+    <string name="personal_information">اطلاعات شخصی</string>
+    <string name="display_name_to_other_users_title">نام قابل نمایش برای کاربران دیگر:</string>
+    <string name="display_name_to_other_users">نام قابل نمایش برای کاربران دیگر</string>
+    <string name="activity_field_title">زمینه فعالیت:</string>
+    <string name="website_address_title">آدرس وبسایت:</string>
+    <string name="website_address">آدرس وبسایت</string>
+    <string name="first_name_title">نام:</string>
+    <string name="first_name">نام</string>
+    <string name="last_name_title">نام خانوادگی:</string>
+    <string name="last_name">نام خانوادگی</string>
+    <string name="email_title">ایمیل:</string>
+    <string name="email">ایمیل</string>
+    <string name="national_code_title">کدملی:</string>
+    <string name="national_code">کدملی</string>
+    <string name="gender_title">جنسیت:</string>
+    <string name="male">مرد</string>
+    <string name="female">زن</string>
+    <string name="activity_desc_title">شرح فعالیت:</string>
+    <string name="activity_desc">شرح فعالیت</string>
+    <string name="professional_services_title">خدمات تخصصی:</string>
+    <string name="professional_services">خدمات تخصصی</string>
+    <string name="services_area_title">محدوده ارائه خدمات:</string>
+    <string name="services_area">محدوده ارائه خدمات</string>
+    <string name="certificates_and_standards_title">گواهینامه ها و استانداردها:</string>
+    <string name="certificates_and_standards">گواهینامه ها و استانداردها</string>
+    <string name="call_information">اطلاعات تماس</string>
+    <string name="address_title">آدرس:</string>
+    <string name="address">آدرس</string>
+    <string name="country_title">کشور:</string>
+    <string name="country">کشور</string>
+    <string name="city_title">شهر:</string>
+    <string name="city">شهر</string>
+    <string name="manager_title">مدیر عامل:</string>
+    <string name="manager">مدیر عامل</string>
+    <string name="phone_number_title">شماره تماس:</string>
+    <string name="phone_number">شماره تماس</string>
+    <string name="this_number_does_not_show_to_other_users">این شماره به دیگر کاربران نمایش داده نخواهد شد.</string>
+    <string name="mobile_title">شماره همراه:</string>
+    <string name="mobile">شماره همراه</string>
+    <string name="phone_number_to_show_to_other_users_title">شماره تماس جهت نمایش به دیگران:</string>
+    <string name="necessary_star">*</string>
+    <string name="my_profile">پروفایل من</string>
+
+    <!-- dialog change user avatar -->
+    <string name="camera">دوربین</string>
+    <string name="choose_from_gallery">انتخاب از گالری</string>
+    <string name="ok">تایید</string>
+
+    <!-- comment -->
+    <string name="no_post">هیچ پستی ارسال نشده است</string>
+
+    <!-- toasts -->
+    <string name="comming_soon">به زودی</string>
+    <string name="press_back_once_again_to_exit">برای خروج یک بار دیگر دکمه بازگشت را فشار دهید</string>
+    <string name="enter_character_to_search">برای جستجو حداقل دو کارکتر وارد نمایید.</string>
+    <string name="please_wait_until_data_loaded">لطفا تا بارگذاری این قسمت کمی صبر کنید.</string>
+    <string name="crash_report_toast">گزارش مشکل پیش آمده جهت بررسی ارسال خواهد شد.</string>
+    <string name="fill_all_fields_are_required">لطفا همه فیلدهای خواسته شده را پر کنید.</string>
+    <string name="fill_all_fields">لطفا همه فیلدها را پر کنید.</string>
+    <string name="password_and_confirm_are_not_same">رمز عبور وارد شده و تکرار آن مشابه نیستند.</string>
+
+
+
+
+</resources>
