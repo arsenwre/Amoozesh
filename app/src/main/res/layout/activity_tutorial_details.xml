@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ripple="http://schemas.android.com/tools"
+    android:id="@+id/card_list_items_lay"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/split_marginBottom_star"
+    android:background="@drawable/background_list"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/token_ly_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginLR"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3.6"
+                android:background="@drawable/back_buttons_light_gray"
+                android:weightSum="4">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/charge_sim_padding_txt"
+                    android:layout_marginTop="@dimen/charge_sim_padding_txt"
+                    android:layout_weight="0.8"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/token_img_compa"
+                        android:layout_width="@dimen/img_logo"
+                        android:layout_height="@dimen/img_logo"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:visibility="invisible"
+                        android:src="@drawable/mci_logo" />
+
+                </LinearLayout>
+
+                <com.pec.reza.amoozesh.ui.DPTextView
+                    android:id="@+id/token_acceptor_name"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="right|center"
+                    android:layout_marginBottom="@dimen/charge_sim_padding_txt"
+                    android:layout_marginRight="@dimen/charge_sim_padding_txt"
+                    android:layout_marginTop="@dimen/charge_sim_padding_txt"
+                    android:layout_weight="3.2"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="right|center"
+                    android:maxLines="1"
+                    android:padding="@dimen/charge_sim_padding_txt"
+                    android:singleLine="true"
+                    android:text="شهروند - سعادت آباد"
+                    android:textColor="@color/txt_dark_gray"
+                    android:textSize="@dimen/normal_size" />
+
+            </LinearLayout>
+
+            <com.pec.reza.amoozesh.ui.DPTextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="right|center"
+                android:layout_weight="1.4"
+                android:gravity="right|center"
+                android:text="نام دوره: "
+                android:textColor="@color/txt_light_gray"
+                android:textSize="@dimen/normal_size" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginLR"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3.6"
+                android:background="@drawable/back_buttons_light_gray"
+                android:weightSum="4">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/charge_sim_padding_txt"
+                    android:layout_marginTop="@dimen/charge_sim_padding_txt"
+                    android:layout_weight="0.8"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/token_img_company"
+                        android:layout_width="@dimen/img_logo"
+                        android:layout_height="@dimen/img_logo"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:visibility="invisible"
+                        android:src="@drawable/mci_logo" />
+
+                </LinearLayout>
+
+                <com.pec.reza.amoozesh.ui.DPTextView
+                    android:id="@+id/token_acceptor_name"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="right|center"
+                    android:layout_marginBottom="@dimen/charge_sim_padding_txt"
+                    android:layout_marginRight="@dimen/charge_sim_padding_txt"
+                    android:layout_marginTop="@dimen/charge_sim_padding_txt"
+                    android:layout_weight="3.2"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="right|center"
+                    android:maxLines="1"
+                    android:padding="@dimen/charge_sim_padding_txt"
+                    android:singleLine="true"
+                    android:text="شهروند - سعادت آباد"
+                    android:textColor="@color/txt_dark_gray"
+                    android:textSize="@dimen/normal_size" />
+
+            </LinearLayout>
+
+            <com.pec.reza.amoozesh.ui.DPTextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="right|center"
+                android:layout_weight="1.4"
+                android:gravity="right|center"
+                android:text="کد دوره:"
+                android:textColor="@color/txt_light_gray"
+                android:textSize="@dimen/normal_size" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginLR"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3.6"
+                android:background="@drawable/back_buttons_light_gray"
+                android:weightSum="4">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/charge_sim_padding_txt"
+                    android:layout_marginTop="@dimen/charge_sim_padding_txt"
+                    android:layout_weight="0.8"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/token_img_company"
+                        android:layout_width="@dimen/img_logo"
+                        android:layout_height="@dimen/img_logo"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:visibility="invisible"
+                        android:src="@drawable/mci_logo" />
+
+                </LinearLayout>
+
+                <com.pec.reza.amoozesh.ui.DPTextView
+                    android:id="@+id/token_acceptor_name"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="right|center"
+                    android:layout_marginBottom="@dimen/charge_sim_padding_txt"
+                    android:layout_marginRight="@dimen/charge_sim_padding_txt"
+                    android:layout_marginTop="@dimen/charge_sim_padding_txt"
+                    android:layout_weight="3.2"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="right|center"
+                    android:maxLines="1"
+                    android:padding="@dimen/charge_sim_padding_txt"
+                    android:singleLine="true"
+                    android:text="شهروند - سعادت آباد"
+                    android:textColor="@color/txt_dark_gray"
+                    android:textSize="@dimen/normal_size" />
+
+            </LinearLayout>
+
+            <com.pec.reza.amoozesh.ui.DPTextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="right|center"
+                android:layout_weight="1.4"
+                android:gravity="right|center"
+                android:text="تاریخ شروع:"
+                android:textColor="@color/txt_light_gray"
+                android:textSize="@dimen/normal_size" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginLR"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3.6"
+                android:background="@drawable/back_buttons_light_gray"
+                android:weightSum="4">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/charge_sim_padding_txt"
+                    android:layout_marginTop="@dimen/charge_sim_padding_txt"
+                    android:layout_weight="0.8"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/token_img_company"
+                        android:layout_width="@dimen/img_logo"
+                        android:layout_height="@dimen/img_logo"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:visibility="invisible"
+                        android:src="@drawable/mci_logo" />
+
+                </LinearLayout>
+
+                <com.pec.reza.amoozesh.ui.DPTextView
+                    android:id="@+id/token_acceptor_name"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="right|center"
+                    android:layout_marginBottom="@dimen/charge_sim_padding_txt"
+                    android:layout_marginRight="@dimen/charge_sim_padding_txt"
+                    android:layout_marginTop="@dimen/charge_sim_padding_txt"
+                    android:layout_weight="3.2"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="right|center"
+                    android:maxLines="1"
+                    android:padding="@dimen/charge_sim_padding_txt"
+                    android:singleLine="true"
+                    android:text="شهروند - سعادت آباد"
+                    android:textColor="@color/txt_dark_gray"
+                    android:textSize="@dimen/normal_size" />
+
+            </LinearLayout>
+
+            <com.pec.reza.amoozesh.ui.DPTextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="right|center"
+                android:layout_weight="1.4"
+                android:gravity="right|center"
+                android:text="تاریخ پایان:"
+                android:textColor="@color/txt_light_gray"
+                android:textSize="@dimen/normal_size" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginLR"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3.6"
+                android:background="@drawable/back_buttons_light_gray"
+                android:weightSum="4">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/charge_sim_padding_txt"
+                    android:layout_marginTop="@dimen/charge_sim_padding_txt"
+                    android:layout_weight="0.8"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/token_img_company"
+                        android:layout_width="@dimen/img_logo"
+                        android:layout_height="@dimen/img_logo"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:visibility="invisible"
+                        android:src="@drawable/mci_logo" />
+
+                </LinearLayout>
+
+                <com.pec.reza.amoozesh.ui.DPTextView
+                    android:id="@+id/token_acceptor_name"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="right|center"
+                    android:layout_marginBottom="@dimen/charge_sim_padding_txt"
+                    android:layout_marginRight="@dimen/charge_sim_padding_txt"
+                    android:layout_marginTop="@dimen/charge_sim_padding_txt"
+                    android:layout_weight="3.2"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="right|center"
+                    android:maxLines="1"
+                    android:padding="@dimen/charge_sim_padding_txt"
+                    android:singleLine="true"
+                    android:text="شهروند - سعادت آباد"
+                    android:textColor="@color/txt_dark_gray"
+                    android:textSize="@dimen/normal_size" />
+
+            </LinearLayout>
+
+            <com.pec.reza.amoozesh.ui.DPTextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="right|center"
+                android:layout_weight="1.4"
+                android:gravity="right|center"
+                android:text="استاد دوره:"
+                android:textColor="@color/txt_light_gray"
+                android:textSize="@dimen/normal_size" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginLR"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3.6"
+                android:background="@drawable/back_buttons_light_gray"
+                android:weightSum="4">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/charge_sim_padding_txt"
+                    android:layout_marginTop="@dimen/charge_sim_padding_txt"
+                    android:layout_weight="0.8"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/token_img_company"
+                        android:layout_width="@dimen/img_logo"
+                        android:layout_height="@dimen/img_logo"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:visibility="invisible"
+                        android:src="@drawable/mci_logo" />
+
+                </LinearLayout>
+
+                <com.pec.reza.amoozesh.ui.DPTextView
+                    android:id="@+id/token_acceptor_name"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="right|center"
+                    android:layout_marginBottom="@dimen/charge_sim_padding_txt"
+                    android:layout_marginRight="@dimen/charge_sim_padding_txt"
+                    android:layout_marginTop="@dimen/charge_sim_padding_txt"
+                    android:layout_weight="3.2"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="right|center"
+                    android:maxLines="1"
+                    android:padding="@dimen/charge_sim_padding_txt"
+                    android:singleLine="true"
+                    android:text="شهروند - سعادت آباد"
+                    android:textColor="@color/txt_dark_gray"
+                    android:textSize="@dimen/normal_size" />
+
+            </LinearLayout>
+
+            <com.pec.reza.amoozesh.ui.DPTextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="right|center"
+                android:layout_weight="1.4"
+                android:gravity="right|center"
+                android:text="مبلغ شهریه: "
+                android:textColor="@color/txt_light_gray"
+                android:textSize="@dimen/normal_size" />
+
+        </LinearLayout>
+
+        <com.pec.reza.amoozesh.ui.rippleView.RippleView
+            android:id="@+id/entry_info_ripple_pay"
+            rv_centered="true"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/marginBottom_for_split"
+            android:layout_marginTop="@dimen/marginLR"
+            android:gravity="center"
+            ripple:rv_centered="true"
+            ripple:rv_color="@color/white"
+            ripple:rv_rippleDuration="100"
+            ripple:rv_type="rectangle"
+            ripple:rv_zoom="true">
+
+            <com.pec.reza.amoozesh.ui.DpButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/back_btn_dark_gray"
+                android:padding="@dimen/padding_btn"
+                android:text="ثبت نام"
+                android:textColor="@color/white"
+                android:textSize="@dimen/normal_size" />
+
+        </com.pec.reza.amoozesh.ui.rippleView.RippleView>
+
+    </LinearLayout>
+</LinearLayout>

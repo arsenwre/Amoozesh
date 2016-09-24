@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ripple="http://schemas.android.com/tools"
+    android:id="@+id/card_list_items_lay"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/split_marginBottom_star"
+    android:background="@null"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/token_ly_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <com.pec.reza.amoozesh.ui.rippleView.RippleView
+            android:id="@+id/entry_info_ripple_pay"
+            rv_centered="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/marginBottom_for_split"
+            android:layout_marginTop="@dimen/marginLR"
+            android:gravity="center"
+            ripple:rv_centered="true"
+            ripple:rv_color="@color/white"
+            ripple:rv_rippleDuration="100"
+            ripple:rv_type="rectangle"
+            ripple:rv_zoom="true">
+
+            <com.pec.reza.amoozesh.ui.DpButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_list_orange"
+                android:padding="@dimen/padding_btn"
+                android:text=" ترم تابستان 95"
+                android:textColor="@color/white"
+                android:textSize="@dimen/normal_size" />
+
+        </com.pec.reza.amoozesh.ui.rippleView.RippleView>
+
+    </LinearLayout>
+</LinearLayout>
