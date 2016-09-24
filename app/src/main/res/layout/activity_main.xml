@@ -4,8 +4,8 @@
     android:id="@+id/first_page_layout"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
     android:layout_marginBottom="@dimen/split_marginBottom_star"
+    android:orientation="vertical"
     tools:context=".FirstPage">
 
     <ScrollView
@@ -24,16 +24,17 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1">
+
                 <com.pec.reza.amoozesh.ui.rippleView.RippleView
-                    android:id="@+id/card_manage_ripplView_adding_new_card"
+                    android:id="@+id/btn_shahrie_rip"
                     rv_centered="true"
                     android:layout_width="wrap_content"
                     android:layout_height="100dp"
-                    android:layout_weight=".30"
                     android:layout_gravity="center"
-                    android:gravity="center"
                     android:layout_marginLeft="@dimen/margin_main"
                     android:layout_marginRight="@dimen/margin_main"
+                    android:layout_weight=".30"
+                    android:gravity="center"
 
                     ripple:rv_centered="true"
                     ripple:rv_color="@color/white"
@@ -42,46 +43,47 @@
                     ripple:rv_zoom="true">
 
                     <RelativeLayout
+                        android:id="@+id/btn_shahrie_rel"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="#203d77"
                         android:layout_marginTop="1dp"
+                        android:background="#203d77"
                         android:orientation="horizontal">
 
                         <ImageView
+                            android:id="@+id/btn_shahrie_img"
                             android:layout_width="52dp"
                             android:layout_height="52dp"
-                            android:src="@drawable/coinmoney"
-                            android:layout_centerVertical="true"
                             android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
                             android:layout_marginEnd="49dp"
-                            android:id="@+id/imageView2" />
+                            android:src="@drawable/coinmoney" />
 
                         <com.pec.reza.amoozesh.ui.DPTextView
-                            android:id="@+id/check_supply_seporde"
+                            android:id="@+id/btn_shahrie_txt"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="30dp"
+                            android:layout_toStartOf="@+id/btn_shahrie_img"
                             android:gravity="center"
                             android:text="پرداخت شهریه "
                             android:textColor="@color/login_edit"
-                            android:textSize="20dp"
-                            android:layout_marginLeft="30dp"
-                            android:layout_centerVertical="true"
-                            android:layout_toStartOf="@+id/imageView2" />
+                            android:textSize="20dp" />
 
                     </RelativeLayout>
 
                 </com.pec.reza.amoozesh.ui.rippleView.RippleView>
 
                 <com.pec.reza.amoozesh.ui.rippleView.RippleView
-                    android:id="@+id/card_manage_ripplView_adding_new_card"
+                    android:id="@+id/btn_payamha_rip"
                     rv_centered="true"
                     android:layout_width="wrap_content"
                     android:layout_height="100dp"
-                    android:layout_weight=".7"
                     android:layout_gravity="center"
-                    android:gravity="center"
                     android:layout_marginRight="@dimen/margin_main"
+                    android:layout_weight=".7"
+                    android:gravity="center"
                     ripple:rv_centered="true"
                     ripple:rv_color="@color/white"
                     ripple:rv_rippleDuration="20"
@@ -89,31 +91,32 @@
                     ripple:rv_zoom="true">
 
                     <RelativeLayout
+                        android:id="@+id/btn_payamha_rel"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="#ef7836"
                         android:layout_marginTop="1dp"
+                        android:background="#ef7836"
                         android:orientation="horizontal">
 
                         <ImageView
+                            android:id="@+id/btn_payamha_img"
                             android:layout_width="52dp"
                             android:layout_height="52dp"
-                            android:src="@drawable/message96"
-                            android:id="@+id/imageView"
-                            android:layout_centerHorizontal="true"
                             android:layout_alignParentTop="true"
-                            android:layout_marginTop="10dp" />
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/message96" />
 
                         <com.pec.reza.amoozesh.ui.DPTextView
-                            android:id="@+id/check_supply_seporde"
+                            android:id="@+id/btn_payamha_txt"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_below="@+id/btn_payamha_img"
+                            android:layout_centerHorizontal="true"
                             android:gravity="center"
                             android:text="پیام ها"
                             android:textColor="@color/login_edit"
-                            android:textSize="20dp"
-                            android:layout_below="@+id/imageView"
-                            android:layout_centerHorizontal="true" />
+                            android:textSize="20dp" />
 
                     </RelativeLayout>
 
@@ -143,13 +146,12 @@
                         android:layout_weight=".6">
 
                         <com.pec.reza.amoozesh.ui.rippleView.RippleView
-                            android:id="@+id/card_manage_ripplView_adding_new_card"
+                            android:id="@+id/btn_doreha_rip"
                             rv_centered="true"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
                             android:gravity="center"
-
                             ripple:rv_centered="true"
                             ripple:rv_color="@color/white"
                             ripple:rv_rippleDuration="20"
@@ -163,24 +165,24 @@
                                 android:orientation="horizontal">
 
                                 <ImageView
+                                    android:id="@+id/btn_doreha_img"
                                     android:layout_width="52dp"
                                     android:layout_height="52dp"
-                                    android:src="@drawable/graduation96"
-                                    android:id="@+id/imageView"
-                                    android:layout_centerHorizontal="true"
                                     android:layout_alignParentTop="true"
-                                    android:layout_marginTop="10dp" />
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="10dp"
+                                    android:src="@drawable/graduation96" />
 
                                 <com.pec.reza.amoozesh.ui.DPTextView
-                                    android:id="@+id/check_supply_seporde"
+                                    android:id="@+id/btn_doreha_txt"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
+                                    android:layout_below="@+id/btn_doreha_img"
+                                    android:layout_centerHorizontal="true"
                                     android:gravity="center"
                                     android:text="آخرین دوره های آموزشگاه"
                                     android:textColor="@color/login_edit"
-                                    android:textSize="20dp"
-                                    android:layout_below="@+id/imageView"
-                                    android:layout_centerHorizontal="true" />
+                                    android:textSize="20dp" />
 
                             </RelativeLayout>
 
@@ -195,16 +197,16 @@
                         android:layout_weight=".4">
 
                         <com.pec.reza.amoozesh.ui.rippleView.RippleView
-                            android:id="@+id/card_manage_ripplView_adding_new_card"
+                            android:id="@+id/btn_nazarsanji_rip"
                             rv_centered="true"
                             android:layout_width="wrap_content"
                             android:layout_height="100dp"
-                            android:layout_weight=".30"
                             android:layout_gravity="center"
-                            android:gravity="center"
                             android:layout_marginLeft="@dimen/margin_main"
                             android:layout_marginRight="@dimen/margin_main"
                             android:layout_marginTop="@dimen/margin_main"
+                            android:layout_weight=".30"
+                            android:gravity="center"
                             ripple:rv_centered="true"
                             ripple:rv_color="@color/white"
                             ripple:rv_rippleDuration="20"
@@ -214,30 +216,30 @@
                             <RelativeLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:background="#203d77"
                                 android:layout_marginTop="1dp"
+                                android:background="#203d77"
                                 android:orientation="horizontal">
 
                                 <ImageView
+                                    android:id="@+id/btn_nazarsanji_img"
                                     android:layout_width="52dp"
                                     android:layout_height="52dp"
-                                    android:src="@drawable/successwhite"
-                                    android:id="@+id/imageView2"
-                                    android:layout_centerVertical="true"
                                     android:layout_alignParentEnd="true"
-                                    android:layout_marginRight="30dp" />
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginRight="30dp"
+                                    android:src="@drawable/successwhite" />
 
                                 <com.pec.reza.amoozesh.ui.DPTextView
-                                    android:id="@+id/check_supply_seporde"
+                                    android:id="@+id/btn_nazarsanji_txt"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="20dp"
                                     android:gravity="center"
                                     android:text="نظر سنجی"
                                     android:textColor="@color/login_edit"
-                                    android:textSize="20dp"
-                                    android:layout_marginLeft="20dp"
-                                    android:layout_centerVertical="true"
-                                    android:layout_alignParentStart="true" />
+                                    android:textSize="20dp" />
 
                             </RelativeLayout>
 
@@ -256,16 +258,16 @@
                     android:orientation="vertical">
 
                     <com.pec.reza.amoozesh.ui.rippleView.RippleView
-                        android:id="@+id/card_manage_ripplView_adding_new_card"
+                        android:id="@+id/btn_savabegh_rip"
                         rv_centered="true"
                         android:layout_width="match_parent"
                         android:layout_height="100dp"
                         android:layout_gravity="center"
+                        android:layout_marginRight="@dimen/margin_main"
+                        android:layout_marginTop="@dimen/margin_main"
                         android:gravity="center"
                         ripple:rv_centered="true"
                         ripple:rv_color="@color/white"
-                        android:layout_marginRight="@dimen/margin_main"
-                        android:layout_marginTop="@dimen/margin_main"
                         ripple:rv_rippleDuration="20"
                         ripple:rv_type="rectangle"
                         ripple:rv_zoom="true">
@@ -277,40 +279,40 @@
                             android:orientation="horizontal">
 
                             <ImageView
+                                android:id="@+id/btn_savabegh_img"
                                 android:layout_width="52dp"
                                 android:layout_height="52dp"
-                                android:src="@drawable/purchase96"
-                                android:id="@+id/imageView"
-                                android:layout_centerHorizontal="true"
                                 android:layout_alignParentTop="true"
-                                android:layout_marginTop="10dp" />
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="10dp"
+                                android:src="@drawable/purchase96" />
 
                             <com.pec.reza.amoozesh.ui.DPTextView
-                                android:id="@+id/check_supply_seporde"
+                                android:id="@+id/btn_savabegh_txt"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_below="@+id/btn_savabegh_img"
+                                android:layout_centerHorizontal="true"
                                 android:gravity="center"
                                 android:text="سوابق آموزشی"
                                 android:textColor="@color/login_edit"
-                                android:textSize="20dp"
-                                android:layout_below="@+id/imageView"
-                                android:layout_centerHorizontal="true" />
+                                android:textSize="20dp" />
 
                         </RelativeLayout>
 
                     </com.pec.reza.amoozesh.ui.rippleView.RippleView>
 
                     <com.pec.reza.amoozesh.ui.rippleView.RippleView
-                        android:id="@+id/card_manage_ripplView_adding_new_card"
+                        android:id="@+id/btn_nomerat_rip"
                         rv_centered="true"
                         android:layout_width="match_parent"
                         android:layout_height="135dp"
                         android:layout_gravity="center"
+                        android:layout_marginRight="@dimen/margin_main"
+                        android:layout_marginTop="@dimen/margin_main"
                         android:gravity="center"
                         ripple:rv_centered="true"
                         ripple:rv_color="@color/white"
-                        android:layout_marginRight="@dimen/margin_main"
-                        android:layout_marginTop="@dimen/margin_main"
                         ripple:rv_rippleDuration="20"
                         ripple:rv_type="rectangle"
                         ripple:rv_zoom="true">
@@ -322,24 +324,24 @@
                             android:orientation="horizontal">
 
                             <ImageView
+                                android:id="@+id/btn_nomerat_img"
                                 android:layout_width="52dp"
                                 android:layout_height="52dp"
-                                android:src="@drawable/nomerat96"
-                                android:id="@+id/imageView"
-                                android:layout_centerHorizontal="true"
                                 android:layout_alignParentTop="true"
-                                android:layout_marginTop="20dp" />
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="20dp"
+                                android:src="@drawable/nomerat96" />
 
                             <com.pec.reza.amoozesh.ui.DPTextView
-                                android:id="@+id/check_supply_seporde"
+                                android:id="@+id/btn_nomerat_txt"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_below="@+id/btn_nomerat_img"
+                                android:layout_centerHorizontal="true"
                                 android:gravity="center"
                                 android:text="نمرات آزمون"
                                 android:textColor="@color/login_edit"
-                                android:textSize="20dp"
-                                android:layout_below="@+id/imageView"
-                                android:layout_centerHorizontal="true" />
+                                android:textSize="20dp" />
 
                         </RelativeLayout>
 
@@ -364,17 +366,17 @@
                     android:weightSum="2">
 
                     <com.pec.reza.amoozesh.ui.rippleView.RippleView
-                        android:id="@+id/card_manage_ripplView_adding_new_card"
+                        android:id="@+id/btn_mali_rip"
                         rv_centered="true"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="1.4"
                         android:layout_gravity="center"
-                        android:gravity="center"
                         android:layout_marginBottom="@dimen/margin_main"
                         android:layout_marginLeft="@dimen/margin_main"
                         android:layout_marginRight="@dimen/margin_main"
                         android:layout_marginTop="@dimen/margin_main"
+                        android:layout_weight="1.4"
+                        android:gravity="center"
                         ripple:rv_centered="true"
                         ripple:rv_color="@color/white"
                         ripple:rv_rippleDuration="20"
@@ -388,43 +390,42 @@
                             android:orientation="horizontal">
 
                             <ImageView
+                                android:id="@+id/btn_mali_img"
                                 android:layout_width="52dp"
                                 android:layout_height="52dp"
-                                android:src="@drawable/usdollar96"
-                                android:id="@+id/imageView2"
-                                android:layout_marginRight="40dp"
+                                android:layout_alignParentEnd="true"
                                 android:layout_centerVertical="true"
-                                android:layout_alignParentEnd="true" />
+                                android:layout_marginRight="40dp"
+                                android:src="@drawable/usdollar96" />
 
                             <com.pec.reza.amoozesh.ui.DPTextView
-                                android:id="@+id/check_supply_seporde"
+                                android:id="@+id/btn_mali_txt"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="20dp"
+                                android:layout_toStartOf="@+id/btn_mali_img"
                                 android:gravity="center"
                                 android:text="سوابق مالی"
                                 android:textColor="@color/login_edit"
-                                android:textSize="20dp"
-                                android:layout_centerVertical="true"
-                                android:layout_toStartOf="@+id/imageView2"
-                                android:layout_marginRight="20dp" />
+                                android:textSize="20dp" />
 
                         </RelativeLayout>
 
                     </com.pec.reza.amoozesh.ui.rippleView.RippleView>
 
 
-
                     <com.pec.reza.amoozesh.ui.rippleView.RippleView
-                        android:id="@+id/card_manage_ripplView_adding_new_card"
+                        android:id="@+id/btn_charge_rip"
                         rv_centered="true"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight=".6"
                         android:layout_gravity="center"
-                        android:gravity="center"
+                        android:layout_marginBottom="@dimen/margin_main"
                         android:layout_marginRight="@dimen/margin_main"
                         android:layout_marginTop="@dimen/margin_main"
-                        android:layout_marginBottom="@dimen/margin_main"
+                        android:layout_weight=".6"
+                        android:gravity="center"
                         ripple:rv_centered="true"
                         ripple:rv_color="@color/white"
                         ripple:rv_rippleDuration="20"
@@ -434,29 +435,29 @@
                         <RelativeLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:background="#59bfc4"
                             android:layout_marginTop="1dp"
+                            android:background="#59bfc4"
                             android:orientation="horizontal">
 
                             <ImageView
+                                android:id="@+id/btn_charge_img"
                                 android:layout_width="48dp"
                                 android:layout_height="48dp"
-                                android:scaleType="fitXY"
-                                android:src="@drawable/salesim"
-                                android:id="@+id/imageView"
                                 android:layout_alignParentTop="true"
-                                android:layout_centerHorizontal="true" />
+                                android:layout_centerHorizontal="true"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/salesim" />
 
                             <com.pec.reza.amoozesh.ui.DPTextView
-                                android:id="@+id/check_supply_seporde"
+                                android:id="@+id/btn_charge_txt"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerHorizontal="true"
                                 android:gravity="center"
                                 android:text="خرید شارژ"
                                 android:textColor="@color/login_edit"
-                                android:textSize="15dp"
-                                android:layout_alignParentBottom="true"
-                                android:layout_centerHorizontal="true" />
+                                android:textSize="15dp" />
 
                         </RelativeLayout>
 
@@ -468,17 +469,17 @@
                     android:layout_width="match_parent"
                     android:layout_height="87.5dp"
                     android:layout_marginBottom="@dimen/margin_main"
-                    android:layout_marginRight="@dimen/margin_main"
                     android:layout_marginLeft="@dimen/margin_main"
+                    android:layout_marginRight="@dimen/margin_main"
                     android:orientation="horizontal">
 
                     <com.pec.reza.amoozesh.ui.rippleView.RippleView
-                        android:id="@+id/card_manage_ripplView_adding_new_card"
+                        android:id="@+id/btn_modiriyat_rip"
                         rv_centered="true"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="1.4"
                         android:layout_gravity="center"
+                        android:layout_weight="1.4"
                         android:gravity="center"
                         ripple:rv_centered="true"
                         ripple:rv_color="@color/white"
@@ -493,27 +494,27 @@
                             android:orientation="horizontal">
 
                             <ImageView
+                                android:id="@+id/btn_modiriyat_img"
                                 android:layout_width="52dp"
                                 android:layout_height="52dp"
-                                android:src="@drawable/modiriyat"
-                                android:id="@+id/imageView2"
+                                android:layout_alignBottom="@+id/btn_modiriyat_txt"
                                 android:layout_marginRight="20dp"
                                 android:layout_marginStart="37dp"
-                                android:layout_alignBottom="@+id/check_supply_seporde"
-                                android:layout_toEndOf="@+id/check_supply_seporde" />
+                                android:layout_toEndOf="@+id/btn_modiriyat_txt"
+                                android:src="@drawable/modiriyat" />
 
                             <com.pec.reza.amoozesh.ui.DPTextView
-                                android:id="@+id/check_supply_seporde"
+                                android:id="@+id/btn_modiriyat_txt"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="20dp"
+                                android:layout_marginStart="71dp"
                                 android:gravity="center"
                                 android:text="ارتباط با مدیریت"
                                 android:textColor="@color/login_edit"
-                                android:textSize="20dp"
-                                android:layout_marginRight="20dp"
-                                android:layout_marginStart="71dp"
-                                android:layout_centerVertical="true"
-                                android:layout_alignParentStart="true" />
+                                android:textSize="20dp" />
 
                         </RelativeLayout>
 
