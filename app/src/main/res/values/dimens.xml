@@ -116,4 +116,7 @@
     <dimen name="smaller_size">11dp</dimen>
     <dimen name="charge_sim_maginTop">30dp</dimen>
     <dimen name="margin_main">5dp</dimen>
+    <dimen name="marginLR">16dp</dimen>
+    <dimen name="marginBottom_for_split">100dp</dimen>
+    <dimen name="img_logo">40dp</dimen>
 </resources>
