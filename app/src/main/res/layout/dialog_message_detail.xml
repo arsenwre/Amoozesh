@@ -103,7 +103,7 @@
                     </LinearLayout>
 
                     <com.pec.reza.amoozesh.ui.DPTextView
-                        android:id="@+id/token_acceptor_name"
+                        android:id="@+id/dialog_message_sender_txt"
                         android:layout_width="0dp"
                         android:layout_height="fill_parent"
                         android:layout_gravity="right|center"
@@ -170,7 +170,7 @@
                     </LinearLayout>
 
                     <com.pec.reza.amoozesh.ui.DPTextView
-                        android:id="@+id/token_acceptor_name"
+                        android:id="@+id/dialog_message_title_txt"
                         android:layout_width="0dp"
                         android:layout_height="fill_parent"
                         android:layout_gravity="right|center"
@@ -237,7 +237,7 @@
                     </LinearLayout>
 
                     <com.pec.reza.amoozesh.ui.DPTextView
-                        android:id="@+id/token_acceptor_name"
+                        android:id="@+id/dialog_message_date_txt"
                         android:layout_width="0dp"
                         android:layout_height="fill_parent"
                         android:layout_gravity="right|center"
@@ -276,7 +276,7 @@
                 android:orientation="horizontal">
 
                 <com.pec.reza.amoozesh.ui.DPEditText
-                    android:id="@+id/dialog_entry_info_edit_tarikh"
+                    android:id="@+id/dialog_message_content_txt"
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
                     android:layout_centerInParent="true"
@@ -341,13 +341,14 @@
                     ripple:rv_zoom="true">
 
                     <com.pec.reza.amoozesh.ui.DpButton
+                        android:id="@+id/dialog_message_cancel_btn"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:gravity="center"
                         android:paddingBottom="@dimen/padding_btn"
                         android:paddingTop="@dimen/padding_btn"
-                        android:text="@string/confirmation"
+                        android:text="بازگشت"
                         android:textColor="@color/white"
                         android:textSize="@dimen/normal_size" />
 

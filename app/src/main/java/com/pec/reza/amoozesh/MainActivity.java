@@ -7,52 +7,107 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+import butterknife.Bind;
+import butterknife.ButterKnife;
+
+
+import com.pec.reza.amoozesh.ui.DpButton;
+import com.pec.reza.amoozesh.ui.rippleView.RippleView;
+
 public class MainActivity extends MainMenuActivity {
+
+    @Bind(R.id.btn_shahrie_rip)
+    RippleView btnShahrie;
+    @Bind(R.id.btn_payamha_rip)
+    RippleView btnPayamha;
+    @Bind(R.id.btn_doreha_rip)
+    RippleView btnDoreha;
+    @Bind(R.id.btn_savabegh_rip)
+    RippleView btnSavabegh;
+    @Bind(R.id.btn_nazarsanji_rip)
+    RippleView btnNazarsanji;
+    @Bind(R.id.btn_nomerat_rip)
+    RippleView btnNomerat;
+    @Bind(R.id.btn_mali_rip)
+    RippleView btnMali;
+    @Bind(R.id.btn_charge_rip)
+    RippleView btnCharge;
+    @Bind(R.id.btn_modiriyat_rip)
+    RippleView btnModiriyat;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-    }
+        ButterKnife.bind(this);
+        btnShahrie.setOnRippleCompleteListener(new RippleView.OnRippleCompleteListener() {
+            @Override
+            public void onComplete(RippleView rippleView) {
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
-    }
+            }
+        });
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
+        btnPayamha.setOnRippleCompleteListener(new RippleView.OnRippleCompleteListener() {
+            @Override
+            public void onComplete(RippleView rippleView) {
+                Intent intent = new Intent(MainActivity.this, PayamhaActivity.class);
+                startActivity(intent);
+            }
+        });
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
+        btnDoreha.setOnRippleCompleteListener(new RippleView.OnRippleCompleteListener() {
+            @Override
+            public void onComplete(RippleView rippleView) {
+                Intent intent = new Intent(MainActivity.this, TutorialTermActivity.class);
+                startActivity(intent);
+            }
+        });
 
-        return super.onOptionsItemSelected(item);
-    }
+        btnSavabegh.setOnRippleCompleteListener(new RippleView.OnRippleCompleteListener() {
+            @Override
+            public void onComplete(RippleView rippleView) {
+                Intent intent = new Intent(MainActivity.this, TutorialHistoryActivity.class);
+                startActivity(intent);
+            }
+        });
 
-    public void btnFeesClick(View v)
-    {
-        Intent i = new Intent(this,FeesActivity.class);
-        startActivity(i);
-    }
+        btnNazarsanji.setOnRippleCompleteListener(new RippleView.OnRippleCompleteListener() {
+            @Override
+            public void onComplete(RippleView rippleView) {
 
-    public void btnMessagesClick(View v)
-    {
-        Intent i = new Intent(this,MessageActivity.class);
-        startActivity(i);
-    }
+            }
+        });
 
-    public void btnLatestCoursesClick(View v)
-    {
-        Intent i = new Intent(this,LatestTrainingCoursesActivity.class);
-        startActivity(i);
+        btnNomerat.setOnRippleCompleteListener(new RippleView.OnRippleCompleteListener() {
+            @Override
+            public void onComplete(RippleView rippleView) {
+                Intent intent = new Intent(MainActivity.this, PointsActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnMali.setOnRippleCompleteListener(new RippleView.OnRippleCompleteListener() {
+            @Override
+            public void onComplete(RippleView rippleView) {
+                Intent intent = new Intent(MainActivity.this, MaliHistoryActivty.class);
+                startActivity(intent);
+            }
+        });
+
+        btnCharge.setOnRippleCompleteListener(new RippleView.OnRippleCompleteListener() {
+            @Override
+            public void onComplete(RippleView rippleView) {
+
+            }
+        });
+
+        btnModiriyat.setOnRippleCompleteListener(new RippleView.OnRippleCompleteListener() {
+            @Override
+            public void onComplete(RippleView rippleView) {
+
+            }
+        });
     }
 
 }

@@ -10,7 +10,7 @@
     android:orientation="vertical">
 
     <LinearLayout
-        android:id="@+id/token_ly_parent"
+        android:id="@+id/message_items_ly"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -51,7 +51,7 @@
                 </LinearLayout>
 
                 <com.pec.reza.amoozesh.ui.DPTextView
-                    android:id="@+id/token_acceptor_name"
+                    android:id="@+id/message_items_sender_txt"
                     android:layout_width="0dp"
                     android:layout_height="fill_parent"
                     android:layout_gravity="right|center"
@@ -118,7 +118,7 @@
                 </LinearLayout>
 
                 <com.pec.reza.amoozesh.ui.DPTextView
-                    android:id="@+id/token_acceptor_name"
+                    android:id="@+id/message_items_date_txt"
                     android:layout_width="0dp"
                     android:layout_height="fill_parent"
                     android:layout_gravity="right|center"
@@ -174,7 +174,7 @@
                     android:gravity="center">
 
                     <ImageView
-                        android:id="@+id/token_img_company"
+                        android:id="@+id/token_img_compan"
                         android:layout_width="@dimen/img_logo"
                         android:layout_height="@dimen/img_logo"
                         android:layout_gravity="center"
@@ -185,7 +185,7 @@
                 </LinearLayout>
 
                 <com.pec.reza.amoozesh.ui.DPTextView
-                    android:id="@+id/token_acceptor_name"
+                    android:id="@+id/message_item_title_txt"
                     android:layout_width="0dp"
                     android:layout_height="fill_parent"
                     android:layout_gravity="right|center"
@@ -216,33 +216,6 @@
                 android:textSize="@dimen/normal_size" />
 
         </LinearLayout>
-
-
-        <com.pec.reza.amoozesh.ui.rippleView.RippleView
-            android:id="@+id/entry_info_ripple_pay"
-            rv_centered="true"
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:layout_gravity="center"
-            android:layout_marginBottom="@dimen/marginBottom_for_split"
-            android:layout_marginTop="@dimen/marginLR"
-            android:gravity="center"
-            ripple:rv_centered="true"
-            ripple:rv_color="@color/white"
-            ripple:rv_rippleDuration="100"
-            ripple:rv_type="rectangle"
-            ripple:rv_zoom="true">
-
-            <com.pec.reza.amoozesh.ui.DpButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/back_btn_dark_gray"
-                android:padding="@dimen/padding_btn"
-                android:text=" جزئیات"
-                android:textColor="@color/white"
-                android:textSize="@dimen/normal_size" />
-
-        </com.pec.reza.amoozesh.ui.rippleView.RippleView>
 
 
     </LinearLayout>

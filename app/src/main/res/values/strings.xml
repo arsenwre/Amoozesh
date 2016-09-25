@@ -1,7 +1,7 @@
 <resources>
 
     <string name="setting">تنظیمات</string>
-    <string name="firstStar">همراه بانک حکمت ایرانیان</string>
+    <string name="firstStar">آموزشگاه</string>
     <string name="confirmation">تایید</string>
     <string name="wellCome">به ستاره اول خوش آمدید</string>
     <string name="userName">نام کاربری</string>
@@ -124,4 +124,10 @@
     <string name="title_activity_latest_training_courses">LatestTrainingCoursesActivity</string>
     <string name="acceptor_name">نام پذیرنده</string>
     <string name="acceptor_code">کد پذیرنده</string>
+    <string name="title_activity_payamha">PayamhaActivity</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_tutorial_term">TutorialTermActivity</string>
+    <string name="title_activity_tutorial_history">TutorialHistory</string>
+    <string name="title_activity_points">PointsActivity</string>
+    <string name="title_activity_mali_history_activty">MaliHistoryActivty</string>
 </resources>

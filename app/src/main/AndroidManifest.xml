@@ -3,22 +3,20 @@
     package="com.pec.reza.amoozesh" >
 
     <application
+        android:name=".Utility.TApplication"
         android:allowBackup="true"
-        android:supportsRtl="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:supportsRtl="true"
         android:theme="@style/AppTheme" >
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity
-            android:name=".FeesActivity"
-            android:label="@string/title_activity_fees" >
         </activity>
         <activity
             android:name=".MessageActivity"
@@ -26,8 +24,24 @@
             android:windowSoftInputMode="adjustPan" >
         </activity>
         <activity
-            android:name=".LatestTrainingCoursesActivity"
-            android:label="@string/title_activity_latest_training_courses" >
+            android:name=".PayamhaActivity"
+            android:label="@string/title_activity_payamha" >
+        </activity>
+        <activity
+            android:name=".TutorialTermActivity"
+            android:label="@string/title_activity_tutorial_term" >
+        </activity>
+        <activity
+            android:name=".TutorialHistoryActivity"
+            android:label="@string/title_activity_tutorial_history" >
+        </activity>
+        <activity
+            android:name=".PointsActivity"
+            android:label="@string/title_activity_points" >
+        </activity>
+        <activity
+            android:name=".MaliHistoryActivty"
+            android:label="@string/title_activity_mali_history_activty" >
         </activity>
     </application>
 
