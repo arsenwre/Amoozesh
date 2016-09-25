@@ -19,11 +19,6 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MessageActivity"
-            android:label="@string/title_activity_message"
-            android:windowSoftInputMode="adjustPan" >
-        </activity>
-        <activity
             android:name=".PayamhaActivity"
             android:label="@string/title_activity_payamha" >
         </activity>

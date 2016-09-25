@@ -4,34 +4,56 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.ImageView;
+import android.widget.ListView;
+
+import com.pec.reza.amoozesh.Adapters.AdapterPayamList;
+import com.pec.reza.amoozesh.Utility.TApplication;
+import com.pec.reza.amoozesh.model.PayamModel;
+import com.pec.reza.amoozesh.ui.DPTextView;
+
+import java.util.ArrayList;
+
+import butterknife.Bind;
+import butterknife.ButterKnife;
 
 public class TutorialTermActivity extends AppCompatActivity {
 
+    @Bind(R.id.toolbar_img_back)
+    ImageView imgBack;
+    DPTextView toolbarTitle;
+    public ArrayAdapter adapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tutorial_term);
+        ButterKnife.bind(this);
+        toolbarTitle = (DPTextView) findViewById(R.id.toolbar_txt_tittle);
+        imgBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+        ListView lstContent = (ListView) findViewById(R.id.tutorial_term_list);
+//        SharedPreference sharedPreference = new SharedPreference();
+        toolbarTitle.setText("آخرین دوره های تعریف شده آموزشگاه");
+        ArrayList<PayamModel> TutorialTerms = new ArrayList<>();
+        adapter = new AdapterPayamList(TutorialTerms);
+        lstContent.setAdapter(adapter);
+        adapter.notifyDataSetChanged();
     }
 
     @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_tutorial_term, menu);
-        return true;
-    }
+    protected void onResume() {
+        TApplication.currentActivity = this;
+        super.onResume();
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+        if (adapter != null) {
+            adapter.notifyDataSetChanged();
         }
-
-        return super.onOptionsItemSelected(item);
     }
+
 }

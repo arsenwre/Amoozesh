@@ -10,7 +10,7 @@
     android:orientation="vertical">
 
     <LinearLayout
-        android:id="@+id/token_ly_parent"
+        android:id="@+id/tutorial_term_ly"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -51,7 +51,7 @@
                 </LinearLayout>
 
                 <com.pec.reza.amoozesh.ui.DPTextView
-                    android:id="@+id/token_acceptor_name"
+                    android:id="@+id/tutorial_term_name_txt"
                     android:layout_width="0dp"
                     android:layout_height="fill_parent"
                     android:layout_gravity="right|center"
@@ -118,7 +118,7 @@
                 </LinearLayout>
 
                 <com.pec.reza.amoozesh.ui.DPTextView
-                    android:id="@+id/token_acceptor_name"
+                    android:id="@+id/tutorial_term_code_txt"
                     android:layout_width="0dp"
                     android:layout_height="fill_parent"
                     android:layout_gravity="right|center"
@@ -185,7 +185,7 @@
                 </LinearLayout>
 
                 <com.pec.reza.amoozesh.ui.DPTextView
-                    android:id="@+id/token_acceptor_name"
+                    android:id="@+id/tutorial_term_startdate_txt"
                     android:layout_width="0dp"
                     android:layout_height="fill_parent"
                     android:layout_gravity="right|center"
@@ -252,7 +252,7 @@
                 </LinearLayout>
 
                 <com.pec.reza.amoozesh.ui.DPTextView
-                    android:id="@+id/token_acceptor_name"
+                    android:id="@+id/tutorial_term_date_txt"
                     android:layout_width="0dp"
                     android:layout_height="fill_parent"
                     android:layout_gravity="right|center"
@@ -284,72 +284,6 @@
 
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/marginLR"
-            android:orientation="horizontal"
-            android:weightSum="5">
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="3.6"
-                android:background="@drawable/back_buttons_light_gray"
-                android:weightSum="4">
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginBottom="@dimen/charge_sim_padding_txt"
-                    android:layout_marginTop="@dimen/charge_sim_padding_txt"
-                    android:layout_weight="0.8"
-                    android:gravity="center">
-
-                    <ImageView
-                        android:id="@+id/token_img_company"
-                        android:layout_width="@dimen/img_logo"
-                        android:layout_height="@dimen/img_logo"
-                        android:layout_gravity="center"
-                        android:gravity="center"
-                        android:visibility="invisible"
-                        android:src="@drawable/mci_logo" />
-
-                </LinearLayout>
-
-                <com.pec.reza.amoozesh.ui.DPTextView
-                    android:id="@+id/token_acceptor_name"
-                    android:layout_width="0dp"
-                    android:layout_height="fill_parent"
-                    android:layout_gravity="right|center"
-                    android:layout_marginBottom="@dimen/charge_sim_padding_txt"
-                    android:layout_marginRight="@dimen/charge_sim_padding_txt"
-                    android:layout_marginTop="@dimen/charge_sim_padding_txt"
-                    android:layout_weight="3.2"
-                    android:background="@null"
-                    android:ellipsize="end"
-                    android:gravity="right|center"
-                    android:maxLines="1"
-                    android:padding="@dimen/charge_sim_padding_txt"
-                    android:singleLine="true"
-                    android:text="شهروند - سعادت آباد"
-                    android:textColor="@color/txt_dark_gray"
-                    android:textSize="@dimen/normal_size" />
-
-            </LinearLayout>
-
-            <com.pec.reza.amoozesh.ui.DPTextView
-                android:layout_width="0dp"
-                android:layout_height="fill_parent"
-                android:layout_gravity="right|center"
-                android:layout_weight="1.4"
-                android:gravity="right|center"
-                android:text="جزئیات:"
-                android:textColor="@color/txt_light_gray"
-                android:textSize="@dimen/normal_size" />
-
-        </LinearLayout>
 
     </LinearLayout>
 </LinearLayout>

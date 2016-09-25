@@ -51,7 +51,7 @@
                 </LinearLayout>
 
                 <com.pec.reza.amoozesh.ui.DPTextView
-                    android:id="@+id/token_acceptor_name"
+                    android:id="@+id/toke"
                     android:layout_width="0dp"
                     android:layout_height="fill_parent"
                     android:layout_gravity="right|center"
