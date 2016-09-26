@@ -74,8 +74,6 @@ public class AdapterPayamList extends ArrayAdapter<PayamModel> {
 
                 }
             });
-
-
         }
     }
 

@@ -1,6 +1,7 @@
 package com.pec.reza.amoozesh.Adapters;
 
 import android.app.Dialog;
+import android.content.Intent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
@@ -8,6 +9,7 @@ import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
 import com.pec.reza.amoozesh.R;
+import com.pec.reza.amoozesh.TutorialTermDetailActivity;
 import com.pec.reza.amoozesh.Utility.TApplication;
 import com.pec.reza.amoozesh.model.PayamModel;
 import com.pec.reza.amoozesh.model.TutorialTermModel;
@@ -38,16 +40,15 @@ public class AdapterTutorialTermList extends ArrayAdapter<TutorialTermModel> {
             txtStartDate = (DPTextView) view.findViewById(R.id.tutorial_term_startdate_txt);
             layoutRoot = (ViewGroup) view.findViewById(R.id.tutorial_term_ly);
         }
-
-
         public void fill(final ArrayAdapter<TutorialTermModel> adapter, final TutorialTermModel item, final int position) {
             txtCode.setText(item.term_code);
             txtDate.setText(item.term_name);
 //            chkDone.setChecked(item.done);
             layoutRoot.setOnClickListener(new View.OnClickListener() {
-
                 @Override
                 public void onClick(View arg0) {
+                    Intent intent = new Intent(TApplication.currentActivity , TutorialTermDetailActivity.class);
+                    TApplication.currentActivity.startActivity(intent);
                 }
             });
         }

@@ -38,6 +38,10 @@
             android:name=".MaliHistoryActivty"
             android:label="@string/title_activity_mali_history_activty" >
         </activity>
+        <activity
+            android:name=".TutorialTermDetailActivity"
+            android:label="@string/title_activity_tutorial_term_detail" >
+        </activity>
     </application>
 
 </manifest>

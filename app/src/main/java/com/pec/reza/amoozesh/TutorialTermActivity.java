@@ -33,6 +33,7 @@ public class TutorialTermActivity extends MainMenuActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tutorial_term);
         ButterKnife.bind(this);
+        TApplication.currentActivity = this;
         toolbarTitle = (DPTextView) findViewById(R.id.toolbar_txt_tittle);
         imgBack.setOnClickListener(new View.OnClickListener() {
             @Override

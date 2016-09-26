@@ -130,4 +130,5 @@
     <string name="title_activity_tutorial_history">TutorialHistory</string>
     <string name="title_activity_points">PointsActivity</string>
     <string name="title_activity_mali_history_activty">MaliHistoryActivty</string>
+    <string name="title_activity_tutorial_term_detail">TutorialTermDetailActivity</string>
 </resources>
