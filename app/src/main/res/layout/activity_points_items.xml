@@ -5,19 +5,30 @@
     android:id="@+id/card_list_items_lay"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginBottom="@dimen/split_marginBottom_star"
-    android:background="@null"
     android:orientation="vertical">
 
     <LinearLayout
         android:id="@+id/token_ly_parent"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="64dp"
         android:orientation="vertical"
-        android:visibility="visible">
+        android:visibility="visible"
+        android:weightSum="1">
+
+        <com.pec.reza.amoozesh.ui.DpButton
+            android:id="@+id/points_btn"
+            android:layout_width="279dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_list_orange"
+            android:padding="@dimen/padding_btn"
+            android:layout_marginTop="7dp"
+            android:text=" ترم تابستان 95"
+            android:textColor="@color/white"
+            android:textSize="@dimen/normal_size"
+            android:layout_gravity="center_horizontal" />
 
         <com.pec.reza.amoozesh.ui.rippleView.RippleView
-            android:id="@+id/entry_info_ripple_pay"
+            android:id="@+id/points_rip"
             rv_centered="true"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -30,15 +41,6 @@
             ripple:rv_rippleDuration="100"
             ripple:rv_type="rectangle"
             ripple:rv_zoom="true">
-
-            <com.pec.reza.amoozesh.ui.DpButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/background_list_orange"
-                android:padding="@dimen/padding_btn"
-                android:text=" ترم تابستان 95"
-                android:textColor="@color/white"
-                android:textSize="@dimen/normal_size" />
 
         </com.pec.reza.amoozesh.ui.rippleView.RippleView>
 
