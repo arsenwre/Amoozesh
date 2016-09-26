@@ -62,7 +62,7 @@ public class AdapterPayamList extends ArrayAdapter<PayamModel> {
                     final DPTextView diagDateTxt = (DPTextView) dialog.findViewById(R.id.dialog_message_date_txt);
                     final DPTextView diagTitleTxt = (DPTextView) dialog.findViewById(R.id.dialog_message_title_txt);
                     final DPTextView diagContentTxt = (DPTextView) dialog.findViewById(R.id.dialog_message_content_txt);
-                    final DpButton diagCancelbtn = (DpButton) dialog.findViewById(R.id.dialog_message_content_txt);
+                    final DpButton diagCancelbtn = (DpButton) dialog.findViewById(R.id.dialog_message_cancel_btn);
 
                     diagCancelbtn.setOnClickListener(new View.OnClickListener() {
                         @Override

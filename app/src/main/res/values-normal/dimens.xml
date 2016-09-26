@@ -115,7 +115,7 @@
     <dimen name="marginTop_counter">20dp</dimen>
     <dimen name="marginTop">10dp</dimen>
     <dimen name="normal_size">18sp</dimen>
-    <dimen name="btn_curve">25dp</dimen>
+    <dimen name="btn_curve">10dp</dimen>
     <dimen name="charge_sim_padding">7dp</dimen>
     <dimen name="charge_sim_padding_txt">6dp</dimen>
     <dimen name="number_size">22dp</dimen>

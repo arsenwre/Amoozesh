@@ -19,7 +19,7 @@ import java.util.ArrayList;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
-public class TutorialTermActivity extends AppCompatActivity {
+public class TutorialTermActivity extends MainMenuActivity {
 
     @Bind(R.id.toolbar_img_back)
     ImageView imgBack;
@@ -40,6 +40,7 @@ public class TutorialTermActivity extends AppCompatActivity {
         ListView lstContent = (ListView) findViewById(R.id.tutorial_term_list);
 //        SharedPreference sharedPreference = new SharedPreference();
         toolbarTitle.setText("آخرین دوره های تعریف شده آموزشگاه");
+        toolbarTitle.setTextSize(15);
         ArrayList<PayamModel> TutorialTerms = new ArrayList<>();
         adapter = new AdapterPayamList(TutorialTerms);
         lstContent.setAdapter(adapter);

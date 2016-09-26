@@ -26,6 +26,8 @@ public class PayamhaActivity extends MainMenuActivity {
     ImageView imgBack;
     DPTextView toolbarTitle;
     public ArrayAdapter adapter;
+    PayamModel payamModel = new PayamModel();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,11 +44,17 @@ public class PayamhaActivity extends MainMenuActivity {
 //        SharedPreference sharedPreference = new SharedPreference();
         toolbarTitle.setText("پیام ها");
         ArrayList<PayamModel> PayamModels = new ArrayList<>();
+        for (int i = 0; i < 2; i++) {
+            payamModel.payam_content = "HiChI";
+            payamModel.payam_sender = "MAN";
+            payamModel.payam_date = "95/8/76";
+            payamModel.payam_title = "BaRaKHoshi";
+            PayamModels.add(payamModel);
+        }
         adapter = new AdapterPayamList(PayamModels);
         lstContent.setAdapter(adapter);
         adapter.notifyDataSetChanged();
     }
-
 
 
     @Override
