@@ -44,7 +44,7 @@ public class PayamhaActivity extends MainMenuActivity {
 //        SharedPreference sharedPreference = new SharedPreference();
         toolbarTitle.setText("پیام ها");
         ArrayList<PayamModel> PayamModels = new ArrayList<>();
-        for (int i = 0; i < 2; i++) {
+        for (int i = 0; i < 5; i++) {
             payamModel.payam_content = "HiChI";
             payamModel.payam_sender = "MAN";
             payamModel.payam_date = "95/8/76";

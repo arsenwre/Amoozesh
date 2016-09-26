@@ -25,17 +25,17 @@ public class AdapterTutorialTermList extends ArrayAdapter<TutorialTermModel> {
     }
 
     private static class ViewHolder {
-        public TextView txtCode;
-        public TextView txtDate;
-        public TextView txtName;
-        public TextView txtStartDate;
+        public DPTextView txtCode;
+        public DPTextView txtDate;
+        public DPTextView txtName;
+        public DPTextView txtStartDate;
         public ViewGroup layoutRoot;
 
         public ViewHolder(View view) {
-            txtCode = (TextView) view.findViewById(R.id.tutorial_term_code_txt);
-            txtDate = (TextView) view.findViewById(R.id.tutorial_term_date_txt);
-            txtName = (TextView) view.findViewById(R.id.tutorial_term_name_txt);
-            txtStartDate = (TextView) view.findViewById(R.id.tutorial_term_startdate_txt);
+            txtCode = (DPTextView) view.findViewById(R.id.tutorial_term_code_txt);
+            txtDate = (DPTextView) view.findViewById(R.id.tutorial_term_date_txt);
+            txtName = (DPTextView) view.findViewById(R.id.tutorial_term_name_txt);
+            txtStartDate = (DPTextView) view.findViewById(R.id.tutorial_term_startdate_txt);
             layoutRoot = (ViewGroup) view.findViewById(R.id.tutorial_term_ly);
         }
 
@@ -48,12 +48,8 @@ public class AdapterTutorialTermList extends ArrayAdapter<TutorialTermModel> {
 
                 @Override
                 public void onClick(View arg0) {
-
-
                 }
             });
-
-
         }
     }
 
@@ -63,7 +59,7 @@ public class AdapterTutorialTermList extends ArrayAdapter<TutorialTermModel> {
 
         TutorialTermModel item = getItem(position);
         if (convertView == null) {
-            convertView = TApplication.inflater.inflate(R.layout.activity_message_items, parent, false);
+            convertView = TApplication.inflater.inflate(R.layout.activity_tutorial_term_items, parent, false);
             holder = new ViewHolder(convertView);
             convertView.setTag(holder);
         } else {

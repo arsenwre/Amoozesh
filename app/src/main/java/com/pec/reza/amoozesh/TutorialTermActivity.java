@@ -10,8 +10,10 @@ import android.widget.ImageView;
 import android.widget.ListView;
 
 import com.pec.reza.amoozesh.Adapters.AdapterPayamList;
+import com.pec.reza.amoozesh.Adapters.AdapterTutorialTermList;
 import com.pec.reza.amoozesh.Utility.TApplication;
 import com.pec.reza.amoozesh.model.PayamModel;
+import com.pec.reza.amoozesh.model.TutorialTermModel;
 import com.pec.reza.amoozesh.ui.DPTextView;
 
 import java.util.ArrayList;
@@ -25,6 +27,7 @@ public class TutorialTermActivity extends MainMenuActivity {
     ImageView imgBack;
     DPTextView toolbarTitle;
     public ArrayAdapter adapter;
+    TutorialTermModel tutorialTermModel = new TutorialTermModel();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,8 +44,15 @@ public class TutorialTermActivity extends MainMenuActivity {
 //        SharedPreference sharedPreference = new SharedPreference();
         toolbarTitle.setText("آخرین دوره های تعریف شده آموزشگاه");
         toolbarTitle.setTextSize(15);
-        ArrayList<PayamModel> TutorialTerms = new ArrayList<>();
-        adapter = new AdapterPayamList(TutorialTerms);
+        ArrayList<TutorialTermModel> TutorialTerms = new ArrayList<>();
+        for (int i = 0; i < 5; i++) {
+            tutorialTermModel.term_code = "HiChI";
+            tutorialTermModel.term_name = "MAN";
+            tutorialTermModel.term_session = "95/8/76";
+            tutorialTermModel.term_start = "BaRaKHoshi";
+            TutorialTerms.add(tutorialTermModel);
+        }
+        adapter = new AdapterTutorialTermList(TutorialTerms);
         lstContent.setAdapter(adapter);
         adapter.notifyDataSetChanged();
     }

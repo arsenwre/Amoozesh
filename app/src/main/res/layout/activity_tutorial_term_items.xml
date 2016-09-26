@@ -5,7 +5,6 @@
     android:id="@+id/card_list_items_lay"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginBottom="@dimen/split_marginBottom_star"
     android:background="@drawable/background_list"
     android:orientation="vertical">
 
@@ -19,15 +18,14 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/marginLR"
             android:orientation="horizontal"
             android:weightSum="5">
 
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="3.6"
-                android:background="@drawable/back_buttons_light_gray"
+                android:layout_weight="3.2"
+                android:background="@null"
                 android:weightSum="4">
 
                 <LinearLayout
@@ -36,7 +34,7 @@
                     android:layout_gravity="center"
                     android:layout_marginBottom="@dimen/charge_sim_padding_txt"
                     android:layout_marginTop="@dimen/charge_sim_padding_txt"
-                    android:layout_weight="0.8"
+                    android:layout_weight="0.1"
                     android:gravity="center">
 
                     <ImageView
@@ -45,8 +43,8 @@
                         android:layout_height="@dimen/img_logo"
                         android:layout_gravity="center"
                         android:gravity="center"
-                        android:visibility="invisible"
-                        android:src="@drawable/mci_logo" />
+                        android:src="@drawable/mci_logo"
+                        android:visibility="invisible" />
 
                 </LinearLayout>
 
@@ -58,7 +56,7 @@
                     android:layout_marginBottom="@dimen/charge_sim_padding_txt"
                     android:layout_marginRight="@dimen/charge_sim_padding_txt"
                     android:layout_marginTop="@dimen/charge_sim_padding_txt"
-                    android:layout_weight="3.2"
+                    android:layout_weight="3.9"
                     android:background="@null"
                     android:ellipsize="end"
                     android:gravity="right|center"
@@ -75,8 +73,9 @@
                 android:layout_width="0dp"
                 android:layout_height="fill_parent"
                 android:layout_gravity="right|center"
-                android:layout_weight="1.4"
+                android:layout_weight="1.8"
                 android:gravity="right|center"
+                android:paddingRight="10dp"
                 android:text="نام دوره: "
                 android:textColor="@color/txt_light_gray"
                 android:textSize="@dimen/normal_size" />
@@ -86,15 +85,14 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/marginLR"
             android:orientation="horizontal"
             android:weightSum="5">
 
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="3.6"
-                android:background="@drawable/back_buttons_light_gray"
+                android:layout_weight="3.2"
+                android:background="@null"
                 android:weightSum="4">
 
                 <LinearLayout
@@ -103,7 +101,7 @@
                     android:layout_gravity="center"
                     android:layout_marginBottom="@dimen/charge_sim_padding_txt"
                     android:layout_marginTop="@dimen/charge_sim_padding_txt"
-                    android:layout_weight="0.8"
+                    android:layout_weight="0.1"
                     android:gravity="center">
 
                     <ImageView
@@ -112,8 +110,8 @@
                         android:layout_height="@dimen/img_logo"
                         android:layout_gravity="center"
                         android:gravity="center"
-                        android:visibility="invisible"
-                        android:src="@drawable/mci_logo" />
+                        android:src="@drawable/mci_logo"
+                        android:visibility="invisible" />
 
                 </LinearLayout>
 
@@ -125,7 +123,7 @@
                     android:layout_marginBottom="@dimen/charge_sim_padding_txt"
                     android:layout_marginRight="@dimen/charge_sim_padding_txt"
                     android:layout_marginTop="@dimen/charge_sim_padding_txt"
-                    android:layout_weight="3.2"
+                    android:layout_weight="3.9"
                     android:background="@null"
                     android:ellipsize="end"
                     android:gravity="right|center"
@@ -142,8 +140,9 @@
                 android:layout_width="0dp"
                 android:layout_height="fill_parent"
                 android:layout_gravity="right|center"
-                android:layout_weight="1.4"
+                android:layout_weight="1.8"
                 android:gravity="right|center"
+                android:paddingRight="10dp"
                 android:text="کد دوره:"
                 android:textColor="@color/txt_light_gray"
                 android:textSize="@dimen/normal_size" />
@@ -153,15 +152,14 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/marginLR"
             android:orientation="horizontal"
             android:weightSum="5">
 
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="3.6"
-                android:background="@drawable/back_buttons_light_gray"
+                android:layout_weight="3.2"
+                android:background="@null"
                 android:weightSum="4">
 
                 <LinearLayout
@@ -170,7 +168,7 @@
                     android:layout_gravity="center"
                     android:layout_marginBottom="@dimen/charge_sim_padding_txt"
                     android:layout_marginTop="@dimen/charge_sim_padding_txt"
-                    android:layout_weight="0.8"
+                    android:layout_weight="0.1"
                     android:gravity="center">
 
                     <ImageView
@@ -179,8 +177,8 @@
                         android:layout_height="@dimen/img_logo"
                         android:layout_gravity="center"
                         android:gravity="center"
-                        android:visibility="invisible"
-                        android:src="@drawable/mci_logo" />
+                        android:src="@drawable/mci_logo"
+                        android:visibility="invisible" />
 
                 </LinearLayout>
 
@@ -192,7 +190,7 @@
                     android:layout_marginBottom="@dimen/charge_sim_padding_txt"
                     android:layout_marginRight="@dimen/charge_sim_padding_txt"
                     android:layout_marginTop="@dimen/charge_sim_padding_txt"
-                    android:layout_weight="3.2"
+                    android:layout_weight="3.9"
                     android:background="@null"
                     android:ellipsize="end"
                     android:gravity="right|center"
@@ -209,8 +207,9 @@
                 android:layout_width="0dp"
                 android:layout_height="fill_parent"
                 android:layout_gravity="right|center"
-                android:layout_weight="1.4"
+                android:layout_weight="1.8"
                 android:gravity="right|center"
+                android:paddingRight="10dp"
                 android:text="تاریخ شروع:"
                 android:textColor="@color/txt_light_gray"
                 android:textSize="@dimen/normal_size" />
@@ -220,15 +219,14 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/marginLR"
             android:orientation="horizontal"
             android:weightSum="5">
 
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="3.6"
-                android:background="@drawable/back_buttons_light_gray"
+                android:layout_weight="3.2"
+                android:background="@null"
                 android:weightSum="4">
 
                 <LinearLayout
@@ -237,7 +235,7 @@
                     android:layout_gravity="center"
                     android:layout_marginBottom="@dimen/charge_sim_padding_txt"
                     android:layout_marginTop="@dimen/charge_sim_padding_txt"
-                    android:layout_weight="0.8"
+                    android:layout_weight="0.1"
                     android:gravity="center">
 
                     <ImageView
@@ -246,8 +244,8 @@
                         android:layout_height="@dimen/img_logo"
                         android:layout_gravity="center"
                         android:gravity="center"
-                        android:visibility="invisible"
-                        android:src="@drawable/mci_logo" />
+                        android:src="@drawable/mci_logo"
+                        android:visibility="invisible" />
 
                 </LinearLayout>
 
@@ -259,7 +257,7 @@
                     android:layout_marginBottom="@dimen/charge_sim_padding_txt"
                     android:layout_marginRight="@dimen/charge_sim_padding_txt"
                     android:layout_marginTop="@dimen/charge_sim_padding_txt"
-                    android:layout_weight="3.2"
+                    android:layout_weight="3.9"
                     android:background="@null"
                     android:ellipsize="end"
                     android:gravity="right|center"
@@ -276,14 +274,13 @@
                 android:layout_width="0dp"
                 android:layout_height="fill_parent"
                 android:layout_gravity="right|center"
-                android:layout_weight="1.4"
+                android:layout_weight="1.8"
                 android:gravity="right|center"
+                android:paddingRight="10dp"
                 android:text="زمان برگزاری:"
                 android:textColor="@color/txt_light_gray"
                 android:textSize="@dimen/normal_size" />
 
         </LinearLayout>
-
-
     </LinearLayout>
 </LinearLayout>

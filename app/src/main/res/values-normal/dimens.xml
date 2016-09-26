@@ -9,6 +9,7 @@
     <dimen name="split_height">48dp</dimen>
     <dimen name="split_marginTop">6dp</dimen>
     <dimen name="split_marginBottom_star">27dp</dimen>
+    <dimen name="split_marginBottom_listview">45dp</dimen>
     <dimen name="split_marginLR">9dp</dimen>
     <dimen name="magin_bottom_for_split">70dp</dimen>
     <dimen name="toolbar_paddingTop_info">2dp</dimen>
