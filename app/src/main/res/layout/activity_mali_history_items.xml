@@ -19,15 +19,14 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/marginLR"
             android:orientation="horizontal"
             android:weightSum="5">
 
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="3.6"
-                android:background="@drawable/back_buttons_light_gray"
+                android:layout_weight="3.2"
+                android:background="@null"
                 android:weightSum="4">
 
                 <LinearLayout
@@ -36,7 +35,7 @@
                     android:layout_gravity="center"
                     android:layout_marginBottom="@dimen/charge_sim_padding_txt"
                     android:layout_marginTop="@dimen/charge_sim_padding_txt"
-                    android:layout_weight="0.8"
+                    android:layout_weight="0.1"
                     android:gravity="center">
 
                     <ImageView
@@ -51,14 +50,14 @@
                 </LinearLayout>
 
                 <com.pec.reza.amoozesh.ui.DPTextView
-                    android:id="@+id/token_acceptor_name"
+                    android:id="@+id/mali_history_bedehi_txt"
                     android:layout_width="0dp"
                     android:layout_height="fill_parent"
                     android:layout_gravity="right|center"
                     android:layout_marginBottom="@dimen/charge_sim_padding_txt"
                     android:layout_marginRight="@dimen/charge_sim_padding_txt"
                     android:layout_marginTop="@dimen/charge_sim_padding_txt"
-                    android:layout_weight="3.2"
+                    android:layout_weight="3.9"
                     android:background="@null"
                     android:ellipsize="end"
                     android:gravity="right|center"
@@ -75,7 +74,7 @@
                 android:layout_width="0dp"
                 android:layout_height="fill_parent"
                 android:layout_gravity="right|center"
-                android:layout_weight="1.4"
+                android:layout_weight="1.8"
                 android:gravity="right|center"
                 android:text=" مبلغ بدهی:"
                 android:textColor="@color/txt_light_gray"
@@ -86,15 +85,14 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/marginLR"
             android:orientation="horizontal"
             android:weightSum="5">
 
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="3.6"
-                android:background="@drawable/back_buttons_light_gray"
+                android:layout_weight="3.2"
+                android:background="@null"
                 android:weightSum="4">
 
                 <LinearLayout
@@ -103,7 +101,7 @@
                     android:layout_gravity="center"
                     android:layout_marginBottom="@dimen/charge_sim_padding_txt"
                     android:layout_marginTop="@dimen/charge_sim_padding_txt"
-                    android:layout_weight="0.8"
+                    android:layout_weight="0.1"
                     android:gravity="center">
 
                     <ImageView
@@ -118,14 +116,14 @@
                 </LinearLayout>
 
                 <com.pec.reza.amoozesh.ui.DPTextView
-                    android:id="@+id/token_acceptor_name"
+                    android:id="@+id/mali_history_totalAmount_txt"
                     android:layout_width="0dp"
                     android:layout_height="fill_parent"
                     android:layout_gravity="right|center"
                     android:layout_marginBottom="@dimen/charge_sim_padding_txt"
                     android:layout_marginRight="@dimen/charge_sim_padding_txt"
                     android:layout_marginTop="@dimen/charge_sim_padding_txt"
-                    android:layout_weight="3.2"
+                    android:layout_weight="3.9"
                     android:background="@null"
                     android:ellipsize="end"
                     android:gravity="right|center"
@@ -142,7 +140,7 @@
                 android:layout_width="0dp"
                 android:layout_height="63dp"
                 android:layout_gravity="right|center"
-                android:layout_weight="1.4"
+                android:layout_weight="1.8"
                 android:gravity="right|center"
                 android:text="جمع پرداختی:"
                 android:textColor="@color/txt_light_gray"
@@ -153,15 +151,14 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/marginLR"
             android:orientation="horizontal"
             android:weightSum="5">
 
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="3"
-                android:background="@drawable/back_buttons_light_gray"
+                android:layout_weight="3.2"
+                android:background="@null"
                 android:weightSum="4">
 
                 <LinearLayout
@@ -170,7 +167,7 @@
                     android:layout_gravity="center"
                     android:layout_marginBottom="@dimen/charge_sim_padding_txt"
                     android:layout_marginTop="@dimen/charge_sim_padding_txt"
-                    android:layout_weight="0.8"
+                    android:layout_weight="0.1"
                     android:gravity="center">
 
                     <ImageView
@@ -185,14 +182,14 @@
                 </LinearLayout>
 
                 <com.pec.reza.amoozesh.ui.DPTextView
-                    android:id="@+id/token_acceptor_name"
+                    android:id="@+id/mali_history_totalShahrie_txt"
                     android:layout_width="0dp"
                     android:layout_height="fill_parent"
                     android:layout_gravity="right|center"
                     android:layout_marginBottom="@dimen/charge_sim_padding_txt"
                     android:layout_marginRight="@dimen/charge_sim_padding_txt"
                     android:layout_marginTop="@dimen/charge_sim_padding_txt"
-                    android:layout_weight="3.2"
+                    android:layout_weight="3.9"
                     android:background="@null"
                     android:ellipsize="end"
                     android:gravity="right|center"
@@ -209,7 +206,7 @@
                 android:layout_width="0dp"
                 android:layout_height="71dp"
                 android:layout_gravity="right|center"
-                android:layout_weight="2"
+                android:layout_weight="1.8"
                 android:gravity="right|center"
                 android:text="جمع شهریه قابل پرداخت:"
                 android:textColor="@color/txt_light_gray"
