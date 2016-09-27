@@ -4,34 +4,64 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.ImageView;
+import android.widget.ListView;
 
-public class MaliHistoryActivty extends AppCompatActivity {
+import com.pec.reza.amoozesh.Adapters.AdapterMaliHistoryList;
+import com.pec.reza.amoozesh.Adapters.AdapterPayamList;
+import com.pec.reza.amoozesh.Utility.TApplication;
+import com.pec.reza.amoozesh.model.MaliHistoryModel;
+import com.pec.reza.amoozesh.model.PayamModel;
+import com.pec.reza.amoozesh.ui.DPTextView;
 
+import java.util.ArrayList;
+
+import butterknife.Bind;
+import butterknife.ButterKnife;
+
+public class MaliHistoryActivty extends MainMenuActivity {
+
+    @Bind(R.id.toolbar_img_back)
+    ImageView imgBack;
+    DPTextView toolbarTitle;
+    public ArrayAdapter adapter;
+    MaliHistoryModel maliHistoryModel = new MaliHistoryModel();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mali_history);
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_mali_history_activty, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+        ButterKnife.bind(this);
+        toolbarTitle = (DPTextView) findViewById(R.id.toolbar_txt_tittle);
+        imgBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+        ListView lstContent = (ListView) findViewById(R.id.mali_history_listView);
+//        SharedPreference sharedPreference = new SharedPreference();
+        toolbarTitle.setText("سوابق مالی");
+        ArrayList<MaliHistoryModel> maliHistoryModels = new ArrayList<>();
+        for (int i = 0; i < 5; i++) {
+            maliHistoryModel.loan_amount = "HiChI";
+            maliHistoryModel.total_amount = "MAN";
+            maliHistoryModel.total_shahrie = "95/8/76";
+            maliHistoryModels.add(maliHistoryModel);
         }
+        adapter = new AdapterMaliHistoryList(maliHistoryModels);
+        lstContent.setAdapter(adapter);
+        adapter.notifyDataSetChanged();
+    }
 
-        return super.onOptionsItemSelected(item);
+    @Override
+    protected void onResume() {
+        TApplication.currentActivity = this;
+        super.onResume();
+
+        if (adapter != null) {
+            adapter.notifyDataSetChanged();
+        }
     }
 }

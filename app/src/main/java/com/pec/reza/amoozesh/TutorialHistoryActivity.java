@@ -57,5 +57,13 @@ public class TutorialHistoryActivity extends MainMenuActivity {
         lstContent.setAdapter(adapter);
         adapter.notifyDataSetChanged();
     }
+    @Override
+    protected void onResume() {
+        TApplication.currentActivity = this;
+        super.onResume();
 
+        if (adapter != null) {
+            adapter.notifyDataSetChanged();
+        }
+    }
 }
